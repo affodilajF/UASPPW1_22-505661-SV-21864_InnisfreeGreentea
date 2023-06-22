@@ -63,6 +63,7 @@ Selain itu juga menggunakan alert apabila suatu tindakan telah dilakukan oleh pe
 
 
 4.	Konten Dinamis.
+
 Menampilkan data-data produk dari database.
 Semua prodk dari database ditampilkan dengan melakukan looping.
 Setelah proses pengambilan data dengan query SELECT, barisan data disimpan kedalam $row. Data-data tersebut akan di-looping dan diprint terhadap struktur html sebagai berikut. 
