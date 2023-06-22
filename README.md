@@ -4,7 +4,7 @@ Penjelasan Website
 
 Innisfree Green Tea Website: Sebuah platform pemasaran yang menawarkan pengalaman transaksi skincare. Lebih khususnya, website ini menyediakan produk skincare Innisfree varian Green Tea. Setelah menyelesaikan proses registrasi dan login, pengguna akan dibawa ke halaman utama dengan dua tombol menu utama, "Shop Now" dan "GoPumpChallenge". Kedua tombol ini mencerminkan dua tujuan utama website ini, yaitu menyediakan proses transaksi yang mudah dan mengadakan event-event yang diadakan oleh Innisfree. Website ini dilengkapi dengan fitur pencarian produk berdasarkan nama, filter produk berdasarkan parameter tertentu, dan keranjang belanja yang memungkinkan pengguna menyimpan barang-barang yang ingin dibeli.
 
-1.	Design Rapi
+1.	Design Rapi.
    
 Sebelum memasuki dan sembari melakukan proses development, explorasi desain telah dilakukan. File figma dapat dilihat di https://www.figma.com/file/wTIBpLKu33flw2OTy2kjXt/innsfree-greentea?type=design&node-id=0%3A1&mode=design&t=pCuASAwDQfhWZF6q-1. 
 
