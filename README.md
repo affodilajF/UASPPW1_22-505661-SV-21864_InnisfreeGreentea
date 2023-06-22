@@ -38,8 +38,18 @@ Selanjutnya, saya memanfaatkan bootstrap untuk membuat website menjadi lebh resp
 
 
 3.	Direct Feedback.
-Menampilkan produk apa saja yang berada di cart masing-masing pengguna.
-Search by name, filter by parameter.
+Pengguna dapat melihat berapa total harga ketika hendak melakukan proses checkout. Ketka sebuah button "checkout" di klik, maka akan mengubah suatu section yang awalnya memiliki display none menjadi display block. Data yang akan tampil adalah data yang dimasukkan saat registrasi dan total produk keseluruhan yang berada di keranjang. Proses checkout akan terjadi ketika tombol "Konfirmasi" ditekan. Proses checkout akan mempengaruhi tiga tabel, yaitu tabel orders (insert data checkout), tabel products (mengurangi jumlah stock) dan tabel shoppingcart (menghapus baris data).
+
+![gambar 14](https://github.com/affodilajF/UASPPW1_22-505661-SV-21864_InnisfreeGreentea/assets/130672181/8b47aade-d5c3-44d0-b4b9-d6bb3461acbe)
+
+Berikut adalah kode javascript yang digunakan untuk menampilkan data dari penjelasan diatas. 
+![gambar 15](https://github.com/affodilajF/UASPPW1_22-505661-SV-21864_InnisfreeGreentea/assets/130672181/a42debc5-7a29-426c-b59f-26f666b40912)
+
+Berikut adalah kode php untuk menghitung total harga. 
+![gambar 16](https://github.com/affodilajF/UASPPW1_22-505661-SV-21864_InnisfreeGreentea/assets/130672181/4b679074-75cb-4791-bdf1-e8934434eeec)
+
+Direct feedbcak yang selajutnya adalah menampilkan produk apa saja yang berada di cart masing-masing pengguna,
+search by name,serta filter by parameter.
 Berikut adalah cuplikan sourcecode phpnya. 
 
 ![gambar 9](https://github.com/affodilajF/UASPPW1_22-505661-SV-21864_InnisfreeGreentea/assets/130672181/02905fcb-f28c-472f-8a84-93004af49311)
@@ -56,6 +66,7 @@ Menampilkan data-data produk dari database.
 Semua prodk dari database ditampilkan dengan melakukan looping.
 Setelah proses pengambilan data dengan query SELECT, barisan data disimpan kedalam $row. Data-data tersebut akan di-looping dan diprint terhadap struktur html sebagai berikut. 
 ![gambar 11](https://github.com/affodilajF/UASPPW1_22-505661-SV-21864_InnisfreeGreentea/assets/130672181/14d02591-99c1-4d8e-b8a9-628fab698b0f)
+
 
 Sebelum berselancar menggunakan website ini, haruslah melalui proses regrister dan login terlebih dahulu. Nilai inputan user pada form login akan ditangkap dan menjalankan fungs if else dibawah ini. 
 Pertama, akan dilakukan pengecekan pada database apakah ada data yang memiliki username yang sama dengan username inputan, jika ada maka akan melakukan pengecekan lebh lnjut terkait password dengan menggunakan fungsi php yaitu passwordVerify. 
