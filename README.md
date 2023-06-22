@@ -10,7 +10,8 @@ Sebelum memasuki dan sembari melakukan proses development, explorasi desain tela
 
 Website dibuat dengan 3 warna utama yatu Hjau, Oren, dan Kuning. Ukuran padding dibuat se-konsisten mungkin yaitu 1.4rem 10% yang berarti memberikan ruang tambahan pada sisi atas dan bawah elemen sebesar 1.4rem, dan ruang tambahan pada sisi kiri dan kanan elemen sebesar 10% dari lebar elemen.
 
-2.	Website Responsive
+2.	Website Responsive.
+   
 Sebagai tujuan dari proses belajar, pada tahap awal pengembangan, website dibuat dengan menggunakan styling CSS saja. Dengan memanfaatkan media query CSS dengan breakpoint sebagai berikut : Laptop (max-wdth: 1366px), Tablet (max-wdth: 758px), Mobile (max-wdth: 450px), Laptop (max-wdth: 1366px) serta breakpoint yang saya temukan terhadap desain website saya yaitu (max-width: 1199px).
 
 Media query pada HTML adalah sebuah teknik yang digunakan untuk mengubah tampilan atau perilaku elemen-elemen pada halaman web berdasarkan karakteristik perangkat atau ukuran tampilan yang digunakan oleh pengguna. Media query memungkinkan pengembang web untuk menyesuaikan tampilan dan responsivitas halaman web agar lebih optimal pada berbagai perangkat dan ukuran layar yang berbeda. Pada gambar dibawah ini, terlihat sintaks @media (max-width: 1199px). @media (max-width: 1199px) artinya aturan CSS yang terdapat di dalam media query tersebut akan diterapkan jika lebar layar perangkat tidak melebihi 1199 piksel.
@@ -36,7 +37,7 @@ Selanjutnya, saya memanfaatkan bootstrap untuk membuat website menjadi lebh resp
 ![gambar 7](https://github.com/affodilajF/UASPPW1_22-505661-SV-21864_InnisfreeGreentea/assets/130672181/a815f26f-8b4a-4d51-beb6-be79c457b1ac)
 
 
-3.	Direct Feedback
+3.	Direct Feedback.
 Menampilkan produk apa saja yang berada di cart masing-masing pengguna.
 Search by name, filter by parameter.
 Berikut adalah cuplikan sourcecode phpnya. 
@@ -50,7 +51,7 @@ Selain itu juga menggunakan alert apabila suatu tindakan telah dilakukan oleh pe
 ![gambar 10](https://github.com/affodilajF/UASPPW1_22-505661-SV-21864_InnisfreeGreentea/assets/130672181/998e6312-d154-480b-9df4-db0d39e12ace)
 
 
-4.	Konten Dinamis 
+4.	Konten Dinamis.
 Menampilkan data-data produk dari database.
 Semua prodk dari database ditampilkan dengan melakukan looping.
 Setelah proses pengambilan data dengan query SELECT, barisan data disimpan kedalam $row. Data-data tersebut akan di-looping dan diprint terhadap struktur html sebagai berikut. 
