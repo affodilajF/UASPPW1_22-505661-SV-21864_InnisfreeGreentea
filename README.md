@@ -30,105 +30,18 @@ Selanjutnya, saya memanfaatkan bootstrap untuk membuat website menjadi lebh resp
 Menampilkan produk apa saja yang berada di cart masing-masing pengguna.
 Search by name, filter by parameter.
 Berikut adalah cuplikan sourcecode phpnya.
-<?php
+![gambar 9](https://github.com/affodilajF/UASPPW1_22-505661-SV-21864_InnisfreeGreentea/assets/130672181/02905fcb-f28c-472f-8a84-93004af49311)
 
-if(isset($_POST['cari'])){
-      // Mendapatkan keyword pencarian dari input pengguna
-      $keyword = $_POST['keyword'];
-  
-      $query = "SELECT * FROM products WHERE nama LIKE '%$keyword%'";
-      $result = mysqli_query($conn, $query);
-  }
-  else if(isset($_POST['MURAH'])){
-      // Membuat query untuk mengurutkan produk berdasarkan harga terendah
-      $query = "SELECT * FROM products ORDER BY price ASC";
-      $result = mysqli_query($conn, $query);
-  }
-  else if(isset($_POST['MAHAL'])){
-      //  Membuat query untuk mengurutkan produk berdasarkan harga tertinggi
-      $query = "SELECT * FROM products ORDER BY price DESC";
-      $result = mysqli_query($conn, $query);
-  }
-  else if(isset($_POST['TOPSTAR'])){
-      // query untuk mengurutkan produk berdasarkan rating tertinggi
-      $query = "SELECT * FROM products ORDER BY rating DESC";
-      $result = mysqli_query($conn, $query);
-  }
-  else{
-      //Jika tombol 'cari' atau tombol pengurutan tidak ditekan, tampilkan semua data produk
-      $query = $query = "SELECT * FROM products WHERE stock > 0";
-      $result = mysqli_query($conn, $query);
-  }
-?>
+
 
 Selain itu juga menggunakan alert apabila suatu tindakan telah dilakukan oleh pengguna. 
-<?php
-if (isset($_GET['shopppingcartidproduct'])) {
-  $product_id = $_GET['shopppingcartidproduct'];
-  $user_id = $_SESSION['Suser_id'];
+![gambar 10](https://github.com/affodilajF/UASPPW1_22-505661-SV-21864_InnisfreeGreentea/assets/130672181/998e6312-d154-480b-9df4-db0d39e12ace)
 
-  // Cek apakah produk sudah ada dalam shopping cart
-  $check_query = "SELECT * FROM shoppingcart WHERE product_id = ? AND user_id = ?";
-  $stmt = mysqli_prepare($conn, $check_query);
-  mysqli_stmt_bind_param($stmt, "ii", $product_id, $user_id);
-  mysqli_stmt_execute($stmt);
-  $check_result = mysqli_stmt_get_result($stmt);
-
-  if (mysqli_num_rows($check_result) > 0) {
-    // Produk sudah ada dalam shopping cart, update qty
-    $update_query = "UPDATE shoppingcart SET qty = qty + 1 WHERE product_id = ? AND user_id = ?";
-    $stmt = mysqli_prepare($conn, $update_query);
-    mysqli_stmt_bind_param($stmt, "ii", $product_id, $user_id);
-    $update_result = mysqli_stmt_execute($stmt);
-
-    if ($update_result) {
-      echo '<script>alert("Quantity updated in the shopping cart.");</script>';
-    } else {
-      echo '<script>alert("Failed to update quantity in the shopping cart.");</script>';
-    }
-  } else {
-    // Produk belum ada dalam shopping cart, lakukan proses insert
-    $insert_query = "INSERT INTO shoppingcart (product_id, user_id, qty) VALUES (?, ?, 1)";
-    $stmt = mysqli_prepare($conn, $insert_query);
-    mysqli_stmt_bind_param($stmt, "ii", $product_id, $user_id);
-    $insert_result = mysqli_stmt_execute($stmt);
-
-    if ($insert_result) {
-      echo '<script>alert("Product added to the shopping cart.");</script>';
-    } else {
-      echo '<script>alert("Failed to add product to the shopping cart.");</script>';
-    }
-  }
-}
-?>
 
 5.	Konten Dinamis 
 Menampilkan data-data produk dari database.
 Semua prodk dari database ditampilkan dengan melakukan looping.
-    <section class="product-section">
-      <?php  while($row = mysqli_fetch_assoc($result)) : ?>
-      <div class="product">
-            <?php echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['product_img'] ).'"/>'; ?>
-            <div class="detailinfos" >
-                  <div class="name"><?php echo $row['nama'] ?></div>
-                  <div class="price"><a>IDR <?php echo $row['price'] ?> </a></div>
-                  <div class="detail">
-                        <div class="ratings">
-                              <div class="bintang"><img src="img/star.png"></div>
-                              <div class="nilairating"><?php echo $row['rating']?></div>
-                        </div>
-                        <a class="eye" href="productDetail.php?eyes=<?php echo $row['id'];?>">
-                              <img src="img/icon/eye.svg">
-                        </a>
-                        
-                        <a class="eye" href="productPage.php?shopppingcartidproduct=<?php echo $row['id'];?>">
-                              <img src="img/icon/shopping-cart.svg">
-                        </a>
-                  </div>
-            </div>
+![gambar 11](https://github.com/affodilajF/UASPPW1_22-505661-SV-21864_InnisfreeGreentea/assets/130672181/14d02591-99c1-4d8e-b8a9-628fab698b0f)
 
-      </div>
-      <?php endwhile; ?>
-    </section>
 
 
