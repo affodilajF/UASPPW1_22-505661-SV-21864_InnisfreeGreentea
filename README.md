@@ -57,6 +57,12 @@ Semua prodk dari database ditampilkan dengan melakukan looping.
 Setelah proses pengambilan data dengan query SELECT, barisan data disimpan kedalam $row. Data-data tersebut akan di-looping dan diprint terhadap struktur html sebagai berikut. 
 ![gambar 11](https://github.com/affodilajF/UASPPW1_22-505661-SV-21864_InnisfreeGreentea/assets/130672181/14d02591-99c1-4d8e-b8a9-628fab698b0f)
 
+Sebelum berselancar menggunakan website ini, haruslah melalui proses regrister dan login terlebih dahulu. Nilai inputan user pada form login akan ditangkap dan menjalankan fungs if else dibawah ini. 
+Pertama, akan dilakukan pengecekan pada database apakah ada data yang memiliki username yang sama dengan username inputan, jika ada maka akan melakukan pengecekan lebh lnjut terkait password dengan menggunakan fungsi php yaitu passwordVerify. 
+Apabila bernilai true, maka pengguna akan diarahkan ke halaman menu utama. Apabila semua syarat login diatas tidak terpenuhi, akan ada notifikasi alert. 
+![Uploading gambar 13.png…]()
+
+
 
 
 
