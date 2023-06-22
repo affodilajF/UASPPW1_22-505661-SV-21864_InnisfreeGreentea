@@ -11,16 +11,15 @@ Website dibuat dengan 3 warna utama yatu Hjau, Oren, dan Kuning. Ukuran padding 
 
 2.	Website Responsive
 Sebagai tujuan dari proses belajar, pada tahap awal pengembangan, website dibuat dengan menggunakan styling CSS saja. Dengan memanfaatkan media query CSS dengan breakpoint sebagai berikut : Laptop (max-wdth: 1366px), Tablet (max-wdth: 758px), Mobile (max-wdth: 450px), Laptop (max-wdth: 1366px).
-Laptop :![gambar 8](https://github.com/affodilajF/UASPPW1_22-505661-SV-21864_InnisfreeGreentea/assets/130672181/4f52a6d8-33b6-4858-8760-16afc4897bba)
 
-
+Laptop :
+![gambar 8](https://github.com/affodilajF/UASPPW1_22-505661-SV-21864_InnisfreeGreentea/assets/130672181/4f52a6d8-33b6-4858-8760-16afc4897bba)
 
 Mobile (Samsung Galaxy S8+ width: 360px).
 ![gambar 5](https://github.com/affodilajF/UASPPW1_22-505661-SV-21864_InnisfreeGreentea/assets/130672181/7b8fd697-26bc-4944-bc77-8dc3a98a09db)
 
 Tablet (Ipad Air width: 820px).
 ![gambar 6](https://github.com/affodilajF/UASPPW1_22-505661-SV-21864_InnisfreeGreentea/assets/130672181/fbda0c30-2ff8-4c17-b010-a605252cc253)
-
 
 Selanjutnya, saya memanfaatkan bootstrap untuk membuat website menjadi lebh responsive. 
 ![gambar 7](https://github.com/affodilajF/UASPPW1_22-505661-SV-21864_InnisfreeGreentea/assets/130672181/a815f26f-8b4a-4d51-beb6-be79c457b1ac)
