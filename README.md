@@ -44,7 +44,8 @@ Pengguna dapat melihat berapa total harga ketika hendak melakukan proses checkou
 ![gambar 14](https://github.com/affodilajF/UASPPW1_22-505661-SV-21864_InnisfreeGreentea/assets/130672181/8b47aade-d5c3-44d0-b4b9-d6bb3461acbe)
 
 Berikut adalah kode javascript yang digunakan untuk menampilkan data dari penjelasan diatas. 
-![gambar 15](https://github.com/affodilajF/UASPPW1_22-505661-SV-21864_InnisfreeGreentea/assets/130672181/a42debc5-7a29-426c-b59f-26f666b40912)
+![gambar 15(1)](https://github.com/affodilajF/UASPPW1_22-505661-SV-21864_InnisfreeGreentea/assets/130672181/ecc3efa7-08af-4679-81c2-9d940c40fbc5)
+
 
 Berikut adalah kode php untuk menghitung total harga. 
 ![gambar 16](https://github.com/affodilajF/UASPPW1_22-505661-SV-21864_InnisfreeGreentea/assets/130672181/4b679074-75cb-4791-bdf1-e8934434eeec)
