@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+body {
+  font-family: "Poopins", sans-serif;
+  /* opacity: 0; */
+  /* transition: opacity 0.3s ease-in-out; */
+}
+
+.section-name {
+  background-color: #9fbf9a;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 4.7rem;
+  padding-bottom: 0.2rem;
+  color: #68a77c;
+  margin-bottom: 1.2px;
+}
+/* navbar doang  */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem 7%;
+  background-color: white;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  position: fixed;
+  /* display: none; */
+  box-shadow: 17px 17px 22px 8px rgba(196, 216, 191, 0.3);
+}
+.navbar .navbar-logo {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.navbar .navbar-n a {
+  color: #9ebf99;
+  display: inline-block;
+  font-size: 1.3rem;
+  margin: 0 0.4rem;
+  text-decoration: none;
+  padding-inline: 0.8rem;
+}
+.navbar .navbar-n a:hover {
+  color: #34724b;
+  background-color: #c4d8bf;
+  border-radius: 8px;
+  padding-inline: 0.8rem;
+}
+
+.navbar .navbar-n a::after {
+  content: "";
+  display: block;
+  padding-bottom: 0.2rem;
+  border-bottom: 0.1rem solid #34724b;
+  transform: scaleX(0);
+  transition: 0.2s linear;
+}
+.navbar .navbar-n a:hover::after {
+  transform: scaleX(0.7);
+}
+
+.navbar .navbar-extra a {
+  color: #34724b;
+  margin: 0 0.5rem;
+}
+.navbar .navbar-extra a:hover {
+  /* color: #34724b; */
+  color: #c4d8bf;
+  margin: 0 0.5rem;
+}
+#menu {
+  display: none;
+}
+
+/* Laptop */
+@media (max-width: 1366px) {
+  /* NAVBAR -------------------------- */
+  .logo img {
+    width: 150px;
+    height: 30px;
+  }
+  /* NAVBAR -------------------------- */
+  html {
+    font-size: 95%;
+  }
+}
+
+/* Tablet */
+@media (max-width: 758px) {
+  /* NAVBAR -------------------------- */
+  .logo img {
+    width: 150px;
+    height: 25px;
+  }
+  #menu {
+    display: inline-block;
+  }
+  .navbar .navbar-n {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: #34724b;
+    width: 20rem;
+    height: 100vh;
+    transition: 0.3s;
+  }
+  .navbar .navbar-n.active {
+    right: 0;
+  }
+  .navbar .navbar-n a {
+    color: white;
+    /* membuat elemennya turun ke bawah */
+    display: block;
+    margin: 1.5rem;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+  }
+  .navbar .navbar-n a::after {
+    transform-origin: 0 0;
+  }
+  .navbar .navbar-n a:hover::after {
+    transform: scale(0.2);
+  }
+  .home {
+    padding-top: 8rem;
+  }
+  .section-name {
+    /* display: none; */
+    padding-top: 0rem;
+  }
+  /* NAVBAR -------------------------- */
+  html {
+    font-size: 62.55%;
+  }
+}
+
+/* Mobile */
+@media (max-width: 450px) {
+  /* NAVBAR -------------------------- */
+  .logo img {
+    width: 140px;
+    height: 25px;
+  }
+  /* NAVBAR -------------------------- */
+  html {
+    font-size: 55%;
+  }
+  .section-name {
+    display: none;
+    /* padding-top: 1rem; */
+  }
+}

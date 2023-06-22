@@ -1,0 +1,520 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+body {
+  font-family: "Poopins", sans-serif;
+  /* opacity: 0; */
+  /* transition: opacity 0.3s ease-in-out; */
+}
+
+.logout-sec {
+  /* position: relative; */
+  /* Atur posisi lainnya sesuai kebutuhan */
+  padding: 1.4rem 8%;
+}
+
+.section-name {
+  background-color: #9fbf9a;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 4.7rem;
+  padding-bottom: 0.2rem;
+  color: #68a77c;
+  margin-bottom: 1.2px;
+}
+
+/* NAVBAR DOANGGGG------------------------ */
+.home {
+  /* background-color: #f0f0f0; */
+  padding: 3rem 10%;
+  background-image: url("wonyou");
+  /* position: relative; */
+  /* display: flex; */
+}
+
+.home .row-home {
+  display: flex;
+}
+
+.home .row-home .home-img {
+  flex: 1 1 30rem;
+}
+.home .row-home .home-img img {
+  /* flex: 1 1 35rem; */
+  width: 100%;
+}
+.home .row-home .content {
+  flex: 1 1 45rem;
+  margin-left: 8rem;
+}
+.home .row-home .content h1 {
+  font-size: 4rem;
+  color: #68a77c;
+  margin-bottom: 4rem;
+  font-weight: 600;
+  margin-top: 4rem;
+}
+
+.home .row-home .content h3 {
+  font-size: 1.5rem;
+  color: #000000;
+  margin-bottom: 0.8rem;
+  margin-top: 1rem;
+}
+.home .row-home .content p {
+  color: #68a77c;
+  margin-bottom: 0.8rem;
+  font-size: 0.9rem;
+}
+.homeButton {
+  display: flex;
+  /* justify-content: center; */
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.homeButton a {
+  display: inline-block;
+  transition: background-color 0.3s ease;
+  color: white;
+}
+.homeButton .shopNowButton {
+  padding: 1rem 2rem;
+  background-color: #34724b;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  font-weight: 700;
+}
+.homeButton .goChallengeButton {
+  padding: 1rem 2rem;
+  background-color: #68a77c;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  font-weight: 700;
+}
+
+.homeButton a:hover {
+  background-color: #fb9b0a;
+}
+
+/* HOMEEEEEEEEEEEEEEEEEEEEEE */
+.disc-tag .disc-text {
+  background-color: #68a77c;
+  /* background-color: black; */
+  padding: 1.4rem 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.2rem;
+}
+.disc-tag .disc-text .a1 {
+  text-decoration: none;
+  color: #ffea2e;
+}
+.disc-tag .disc-text .a1 span {
+  font-size: 2rem;
+  font-weight: 800;
+  font-family: "Poppins", sans-serif;
+  font-style: italic;
+}
+
+.disc-tag .disc-text .a2 {
+  text-decoration: none;
+  color: white;
+}
+.disc-tag .disc-text .a2 span {
+  font-size: 1.8rem;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+}
+.disc-tag .disc-text .a3 {
+  text-decoration: none;
+  color: white;
+}
+/* DISCOUNT TAGGGGGG */
+.products-sec {
+  padding: 5rem 20%;
+  display: flex;
+  flex-direction: row;
+  gap: 35px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.products-sec .product {
+  width: 13rem;
+  /* height: 30rem; */
+  box-shadow: 17px 17px 22px 8px rgba(196, 216, 191, 0.3);
+  border-radius: 20px;
+  padding: 0.5rem 3%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.products-sec .product .price a {
+  font-size: 0.8rem;
+  background-color: #34724b;
+  padding: 0.7rem;
+  color: white;
+  background: #34724b;
+  box-shadow: 17px 17px 22px 8px rgba(196, 216, 191, 0.3);
+  border-radius: 10px;
+}
+.products-sec .product .detail {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.products-sec .product .product-name {
+  text-align: center;
+  width: 10rem;
+}
+.products-sec .product .detail .rating {
+  display: flex;
+  flex-direction: row;
+  font-size: 1rem;
+  justify-content: center;
+  gap: 0.5rem;
+  color: #34724b;
+}
+.products-sec .product .detail .rating .bintang img {
+  width: 1.6rem;
+  height: 1.6rem;
+}
+
+.img-product img {
+  width: 100%; /* Atur lebar gambar menjadi 100% dari lebar elemen img-product */
+  height: auto; /* Biarkan tinggi gambar menyesuaikan proporsi aslinya */
+}
+/* PRODUCTTTTTTTTTTTTT */
+.seemore {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 1.4rem;
+}
+.seemore .seemores {
+  background-color: #9bbf82;
+  gap: 2rem;
+  padding: 1rem;
+  border-radius: 3rem;
+  width: 20rem;
+  display: flex;
+  justify-content: center;
+}
+.seemore .seemores img {
+  width: 2rem;
+  height: 2rem;
+}
+.seemore .seemores button {
+  background-color: #9bbf82;
+  color: white;
+  font-size: 700;
+}
+/* SEE OTHER PRODUCTS BUTTONNNNNNN */
+.challenge {
+  padding: 2rem 26%;
+}
+.challenge .judul {
+  display: flex;
+  justify-content: center;
+  font-size: 1.7rem;
+  color: #34724b;
+  padding-bottom: 1.2rem;
+}
+.challenge .judul .a {
+  font-style: italic;
+  font-weight: 1000;
+}
+.challenge .judul .b {
+  font-size: 1rem;
+}
+.challenge .judul .c {
+  font-style: italic;
+  font-weight: 900;
+  font-size: 3.4rem;
+}
+.challenge .detailChallenge {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.challenge .detailChallenge .video {
+  box-shadow: 17px 17px 22px 8px rgba(196, 216, 191, 0.3);
+}
+
+.challenge .detailChallenge .video {
+  flex: 1 1 15rem;
+}
+.challenge .detailChallenge .video video {
+  width: 100%;
+  /* width: 44%; */
+}
+.challenge .detailChallenge .info {
+  flex: 1 1 15rem;
+  /* margin-left: 4rem; */
+  color: #34724b;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  /* padding-top: 2rem; */
+  justify-content: center;
+  outline: 1.5px solid #9bbf82;
+  border-radius: 2%;
+  padding: 1.4rem 5%;
+  box-shadow: 17px 17px 22px 8px rgba(196, 216, 191, 0.3);
+}
+.challenge .detailChallenge .info .info1 {
+  font-size: 1.2rem;
+}
+.challenge .detailChallenge .info .info3 {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #68a77c;
+}
+.challenge .detailChallenge .info .info4 button {
+  color: #34724b;
+  background-color: #ffe500;
+  border: none;
+  padding: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  /* margin-right: 1rem; */
+  border-radius: 1rem;
+  cursor: pointer;
+  margin-bottom: 2rem;
+  /* font-weight: 600; */
+}
+
+/* CHALLENGGEEEE */
+.challenge .videosubmit {
+  padding-top: 4rem;
+}
+.challenge .videosubmit .info {
+  background-color: #fb9b0a;
+  padding: 0.7rem 10%;
+  color: white;
+  text-align: center;
+  border-radius: 2.5rem;
+}
+.challenge .videosubmit .info h5 {
+  font-weight: 800;
+  padding-top: 0.3rem;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 2rem;
+  color: #2d5a3d;
+  font-weight: 500;
+}
+
+label {
+  margin-top: 0.5rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"] {
+  padding: 0.3rem; /* 10px / 16px = 0.625rem */
+  border: 0.1rem solid #ccc; /* 1px / 16px = 0.063rem */
+  border-radius: 0.313rem; /* 5px / 16px = 0.313rem */
+  font-size: 1rem; /* Ukuran font 16px */
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 0.625rem; /* 10px / 16px = 0.625rem */
+}
+input[type="url"] {
+  margin-bottom: 2rem;
+}
+
+input[type="submit"] {
+  padding: 0.625rem 1.25rem; /* 10px / 16px = 0.625rem | 20px / 16px = 1.25rem */
+  background-color: #34724b;
+  font-weight: 400;
+  color: white;
+  border: none;
+  border-radius: 0.313rem; /* 5px / 16px = 0.313rem */
+  font-size: 1rem; /* Ukuran font 16px */
+  cursor: pointer;
+  padding-top: 0.5rem;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+/* VIDEO SUBMITTTTT */
+.rev {
+  padding: 2rem 20%;
+}
+.rev .judul span {
+  font-weight: 800;
+  color: #fb9b0a;
+  font-size: 2.5rem;
+}
+.rev .box {
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 2rem;
+}
+.rev .box h7 {
+  font-size: 0.6rem;
+  color: white;
+  padding: 1.5rem;
+}
+
+.rev .box p {
+  font-size: 0.6rem;
+  color: white;
+  padding: 1.5rem;
+}
+.rev .box .box1 {
+  background: #2c5a3b;
+  box-shadow: 0px 13px 20px rgba(62, 153, 98, 0.25);
+  width: 15rem;
+  height: 10rem;
+  transition: transform 0.3s ease-in-out;
+}
+.rev .box .box2 {
+  background: #68a77c;
+  box-shadow: 0px 13px 20px rgba(62, 153, 98, 0.25);
+  width: 15rem;
+  height: 10rem;
+  transition: transform 0.3s ease-in-out;
+}
+.rev .box .box3 {
+  background: #34724b;
+  box-shadow: 0px 13px 20px rgba(62, 153, 98, 0.25);
+  width: 15rem;
+  height: 10rem;
+  transition: transform 0.3s ease-in-out;
+}
+.rev .box .box1:hover,
+.rev .box .box2:hover,
+.rev .box .box3:hover {
+  transform: scale(1.1);
+}
+
+/* Laptop */
+@media (max-width: 1366px) {
+  /* NAVBAR -------------------------- */
+
+  /* NAVBAR -------------------------- */
+  html {
+    font-size: 95%;
+  }
+}
+
+@media (max-width: 1199px) {
+  .home .row-home .content {
+    /* font-size: 2rem;
+    color: #68a77c;
+    margin-bottom: 4rem;
+    font-weight: 600;
+    margin-top: 4rem; */
+    /* flex: 4 1 15rem;
+    margin-left: 0rem; */
+  }
+  .home .row-home .content h1 {
+    font-size: 3rem;
+    color: #68a77c;
+    margin-bottom: 3rem;
+    font-weight: 600;
+    /* margin-top: 2rem; */
+  }
+  .home .row-home {
+    flex-wrap: wrap;
+  }
+  .home .row-home .content {
+    margin-left: 0rem;
+  }
+  .home .row-home .home-img img {
+    /* flex: 1 1 35rem; */
+    /* width: 50%; */
+    height: 25rem;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+
+/* Tablet */
+@media (max-width: 758px) {
+  .challenge .detailChallenge .info {
+    /* margin-left: auto; */
+    /* margin-left: 0rem; */
+  }
+
+  .section-name {
+    display: none;
+  }
+  .home .row-home {
+    flex-wrap: wrap;
+  }
+  .home .row-home .content {
+    margin-left: 0rem;
+  }
+  .home .row-home .home-img img {
+    /* flex: 1 1 35rem; */
+    /* width: 50%; */
+    height: 18rem;
+    object-fit: cover;
+    object-position: center;
+  }
+  .home .row-home .content h1 {
+    font-size: 3rem;
+    color: #68a77c;
+    margin-bottom: 3rem;
+    font-weight: 600;
+    margin-top: 2rem;
+  }
+  /* HOMEEEEEEEEEEE */
+  .products-sec {
+    padding: 2rem;
+  }
+  html {
+    font-size: 62.55%;
+  }
+}
+
+/* Mobile */
+@media (max-width: 450px) {
+  /* discount */
+  .disc-tag .disc-text {
+    font-size: 0.8rem;
+  }
+  .disc-tag .disc-text .a1 {
+  }
+  .disc-tag .disc-text .a1 span {
+    font-size: 1rem;
+    font-weight: 800;
+  }
+
+  .disc-tag .disc-text .a2 {
+    text-decoration: none;
+  }
+  .disc-tag .disc-text .a2 span {
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  .disc-tag .disc-text .a3 {
+    text-decoration: none;
+    color: white;
+  }
+  /* NAVBAR -------------------------- */
+  html {
+    font-size: 55%;
+  }
+}

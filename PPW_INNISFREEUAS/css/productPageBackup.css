@@ -1,0 +1,417 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+body {
+  font-family: "Poopins", sans-serif;
+}
+/* .search .data {
+  margin-top: 10rem;
+  color: #34724b;
+  padding: 0.5rem 10%;
+} */
+
+/* SEARCH */
+.cart a {
+  text-decoration: none;
+}
+
+.modal-sec {
+  padding: 1.4rem 9%;
+  background-color: #34724b;
+  /* background-color: white; */
+  margin-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  position: fixed;
+  z-index: 99999;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  /* margin-top: 10rem; */
+}
+.modal-sec .back {
+  background-color: white;
+  width: auto;
+  height: 3rem;
+  margin-top: 2.5rem;
+  border-bottom: 0.1rem solid #68a77c;
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  justify-content: flex-end;
+  /* border-bottom: 0.1rem dashed #2d5a3d; */
+}
+.modal-sec .back img {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.back-button {
+  background-color: white;
+  font-weight: 500;
+  font-size: 1rem;
+  color: #34724b;
+  /* padding-right: 2.2rem; */
+  text-decoration: none;
+  margin-right: 2.2rem;
+  padding: 0.4rem;
+  border-radius: 0.3rem;
+}
+.back-button:hover {
+  /* Atur properti CSS yang diinginkan saat button di-hover */
+  background-color: #b1caad;
+  color: #34724b;
+}
+
+.modal-sec .hiasanhehe {
+  height: 1.5rem;
+  background-color: #2d5a3d;
+}
+.modal-sec .modalContainer .modal-content {
+  display: flex;
+  flex-direction: row;
+  /* box-shadow: 17px 17px 22px 8px rgba(196, 216, 191, 0.3); */
+  border: none;
+  border-radius: none;
+  /* margin-top: 4rem; */
+}
+
+.modal-sec .modalContainer .modal-content .product-img img {
+  /* flex: 0; */
+  width: 100%;
+  /* object-fit: cover; */
+  width: 100%;
+  height: auto;
+  padding: 0;
+  flex: 1 1 35rem;
+  max-width: 35rem;
+}
+.modal-sec .modalContainer .modal-content .product-content {
+  /* flex: 0; */
+  padding-top: 2rem;
+  flex: 1 1 45rem;
+  margin-left: 2rem;
+  margin-right: 2.2rem;
+  color: #34724b;
+  /* color: aqua; */
+}
+.modal-sec .modalContainer .modal-content .product-content h3 {
+  font-size: 2.3rem;
+  font-weight: 700;
+}
+.modal-sec .modalContainer .modal-content .product-content .price {
+  padding-top: 1rem;
+  font-size: 1.5rem;
+  /* font-weight: 600; */
+}
+.modal-sec .modalContainer .modal-content .product-content p {
+  padding-top: 1rem;
+  font-size: 0.8rem;
+  color: #68a77c;
+}
+.modal-sec .modalContainer .modal-content .product-content .cart {
+  padding-top: 1rem;
+}
+.modal-sec .modalContainer .modal-content .product-content .cart a {
+  /* padding-top: 1rem; */
+  background-color: #fb9b0a;
+  color: white;
+  padding: 0.8rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+.modal-sec .modalContainer .modal-content .info-mini {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.modal-sec .modalContainer .modal-content .info-mini img {
+  width: 1rem;
+  height: 1rem;
+}
+.modal-sec .modalContainer .modal-content .info-mini .ratings {
+  display: flex;
+  flex-direction: row;
+}
+/* modal */
+
+.fiturSearch {
+  padding: 0rem 10%;
+}
+
+.fiturSearch .fiturcari {
+  display: flex;
+  padding: 1rem;
+  margin-top: 8rem;
+  background: #ffffff;
+  border: 0.1rem solid #fca829;
+  box-shadow: 0px 0.4rem 1.5rem rgba(251, 155, 10, 0.12);
+  border-radius: 1rem;
+  flex-wrap: nowrap;
+}
+.fiturSearch .fiturcari input[type="text"] {
+  /* margin-right: 15rem; */
+  /* width: 60rem; */
+}
+
+.fiturSearch .fiturcari button[type="submit"] {
+  /* margin-left: auto; */
+  /* margin-right: 30rem; */
+  background-color: #fb9b0a;
+  color: white;
+  border-radius: 5%;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.filter {
+  padding: 1.4rem 10%;
+}
+.filter .search {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 1rem;
+  font-size: 0.7rem;
+}
+.filter button {
+  /* padding: 1.4rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem; */
+  padding: 0.8rem;
+  border-radius: 1rem;
+  /* background-color: #68a77c; */
+}
+
+/* PRODUCTTT */
+.product-section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* justify-content: space-between; */
+  padding: 1rem 10%;
+  gap: 4.5rem;
+  /* margin-top: 1.5rem; */
+}
+.product-section .product {
+  width: 12rem;
+  outline: 0.1rem solid #9fbf9a;
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease-in-out;
+}
+.product-section .product:hover {
+  transform: scale(1.07);
+}
+
+.product-section .product .product-img img {
+  width: 100%;
+  height: auto;
+  padding: 0;
+}
+
+.product-section .product .detailinfos {
+  /* background-color: #9fbf9a; */
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem 10%;
+}
+.product-section .product .detailinfos .name {
+  text-align: center;
+  font-size: 0.9rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.product-section .product .detailinfos .price {
+  background-color: #34724b;
+  padding: 0.5rem 3%;
+  text-align: center;
+  color: white;
+  font-size: 1rem;
+  width: 8rem;
+  display: block;
+  margin: 0 auto;
+}
+.product-section .product .detailinfos .detail {
+  display: flex;
+  flex-direction: row;
+  font-size: 0.8rem;
+  justify-content: space-between;
+  gap: 1rem;
+  color: #68a77c;
+}
+
+.product-section .product .detailinfos .ratings {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.2rem;
+  align-items: center;
+  /* align-items: flex-end; */
+}
+.product-section .product .detailinfos .cart img {
+  width: 1rem;
+  height: 1rem;
+}
+
+.product-section .product .detailinfos .ratings .bintang img {
+  width: 0.8rem;
+  height: 0.9rem;
+}
+.product-section .product .detailinfos .detail .eye img {
+  width: 1.3rem;
+  height: 1.3rem;
+  transition: transform 0.3s ease;
+  /* background-color: #fb9b0a; */
+}
+
+.product-section .product .detailinfos .detail .eye img:hover {
+  /* Tambahkan properti CSS untuk efek hover di sini */
+  /* background-color: #fb9b0a; */
+  transform: scale(1.2);
+}
+
+/* Tablet */
+@media (max-width: 758px) {
+  .product-section {
+    /* padding: 0.5rem; */
+    gap: 2rem;
+  }
+  .modal-sec .modalContainer .modal-content {
+    flex-wrap: wrap;
+  }
+  .modal-sec .modalContainer .modal-content .product-img img {
+  }
+  .modal-sec .modalContainer .modal-content .product-content {
+    /* flex: 0; */
+    /* padding-top: 2rem; */
+    /* color: aqua; */
+  }
+}
+
+/* height: 18rem;
+object-fit: cover;
+object-position: center; */
+
+@media (max-width: 1199px) {
+  .modal-sec .modalContainer .modal-content .product-content h3 {
+    font-size: 1.8rem;
+    font-weight: 700;
+  }
+  .modal-sec .modalContainer .modal-content .product-content .price {
+    padding-top: 0rem;
+    font-size: 1.2rem;
+  }
+  .modal-sec .modalContainer .modal-content .product-content p {
+    padding-top: 1rem;
+    font-size: 0.6rem;
+    color: #68a77c;
+  }
+  .modal-sec .modalContainer .modal-content .product-content .cart a {
+    /* padding-top: 1rem; */
+    padding: 0.4rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-size: 0.9rem;
+  }
+  .modal-sec .modalContainer .modal-content .info-mini {
+    gap: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    font-size: 0.7rem;
+  }
+  .modal-sec .modalContainer .modal-content .info-mini img {
+    width: 0.7rem;
+    height: 0.7rem;
+  }
+  .modal-sec .modalContainer .modal-content .info-mini .ratings {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+/* laptop */
+@media (max-width: 1366px) {
+  /* NAVBAR -------------------------- */
+  html {
+    font-size: 95%;
+  }
+}
+
+/* Mobile */
+@media (max-width: 450px) {
+  html {
+    font-size: 55%;
+  }
+  .product-section {
+    /* padding: 0rem 2%; */
+    /* gap: 2rem; */
+  }
+}
+
+/* .product-section {
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 1.4rem 10%;
+}
+.product-section .product {
+  width: 13rem;
+  outline: 0.1rem solid #9fbf9a;
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+.product .product-img img {
+  width: 100%;
+  height: auto;
+  padding: 0;
+}
+
+.products-section .product .detailinfos .detail .ratings {
+  display: flex;
+  flex-direction: row;
+  font-size: 1rem;
+  justify-content: center;
+  gap: 0.5rem;
+  color: #34724b;
+}
+
+.products-section .product .detailinfos .detail .ratings .bintang img {
+  width: 1.6rem;
+  height: 1.6rem;
+}
+.product-section .detailinfos {
+  display: flex;
+  flex-direction: column;
+  padding-top: 0rem;
+  padding: 1.4rem 10%;
+  gap: 1rem;
+}
+.product-section .detailinfos .price {
+  background-color: #34724b;
+  padding: 0.5rem 3%;
+  text-align: center;
+  color: white;
+}
+.product-section .detailinfos .detail {
+  display: flex;
+  flex-direction: row;
+  font-size: 1rem;
+  justify-content: center;
+  gap: 0.5rem;
+} */
