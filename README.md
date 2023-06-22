@@ -38,6 +38,7 @@ Selanjutnya, saya memanfaatkan bootstrap untuk membuat website menjadi lebh resp
 
 
 3.	Direct Feedback.
+
 Pengguna dapat melihat berapa total harga ketika hendak melakukan proses checkout. Ketka sebuah button "checkout" di klik, maka akan mengubah suatu section yang awalnya memiliki display none menjadi display block. Data yang akan tampil adalah data yang dimasukkan saat registrasi dan total produk keseluruhan yang berada di keranjang. Proses checkout akan terjadi ketika tombol "Konfirmasi" ditekan. Proses checkout akan mempengaruhi tiga tabel, yaitu tabel orders (insert data checkout), tabel products (mengurangi jumlah stock) dan tabel shoppingcart (menghapus baris data).
 
 ![gambar 14](https://github.com/affodilajF/UASPPW1_22-505661-SV-21864_InnisfreeGreentea/assets/130672181/8b47aade-d5c3-44d0-b4b9-d6bb3461acbe)
