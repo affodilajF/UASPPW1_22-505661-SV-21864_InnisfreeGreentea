@@ -1,8 +1,17 @@
 # UASPPW1_22-505661-SV-21864_InnisfreeGreentea
+Fadhila Ain S
+22/505661/SV/21864
 
 Penjelasan Website
 
 Innisfree Green Tea Website: Sebuah platform pemasaran yang menawarkan pengalaman transaksi skincare. Lebih khususnya, website ini menyediakan produk skincare Innisfree varian Green Tea. Setelah menyelesaikan proses registrasi dan login, pengguna akan dibawa ke halaman utama dengan dua tombol menu utama, "Shop Now" dan "GoPumpChallenge". Kedua tombol ini mencerminkan dua tujuan utama website ini, yaitu menyediakan proses transaksi yang mudah dan mengadakan event-event yang diadakan oleh Innisfree. Website ini dilengkapi dengan fitur pencarian produk berdasarkan nama, filter produk berdasarkan parameter tertentu, dan keranjang belanja yang memungkinkan pengguna menyimpan barang-barang yang ingin dibeli.
+
+Tujuan : 
+Sebagaimana website penyedia layanan transaksi, web ini bertujuan untuk mempermudah pertemuan antara penjual dengan pembeli. Calon pembeli dapat melihat informasi terkait produk Innisfree.
+
+Permasalahan yang ingin diselesaikan.
+a). Innisfree merupakan sebuah skincare asal korea. Distribusi skincare dari luar negri ke indonesia tak lepas dari ancaman oknum jahat. Pemalsuan dan penipuan bisa terjadi apabila pembeli tidak berhati-hati. Dengan adanya website Innisfre ini, diharapkah pengguna dapat membeli dan memperoleh informasi yang lebih aman dan terpercaya. 
+b). Website ini memuat sebuah informasi yang diadakan oleh Innisfree, seperti contohnya #GoPlumpChallenge. Web ini dapat digunakan sebagai proses branding diri dari pihak Innisfree.
 
 1.	Design Rapi.
    
@@ -66,7 +75,7 @@ Selain itu juga menggunakan alert apabila suatu tindakan telah dilakukan oleh pe
 4.	Konten Dinamis.
 
 Menampilkan data-data produk dari database.
-Semua prodk dari database ditampilkan dengan melakukan looping.
+Semua produk dari database ditampilkan dengan melakukan looping.
 Setelah proses pengambilan data dengan query SELECT, barisan data disimpan kedalam $row. Data-data tersebut akan di-looping dan diprint terhadap struktur html sebagai berikut. 
 ![gambar 11](https://github.com/affodilajF/UASPPW1_22-505661-SV-21864_InnisfreeGreentea/assets/130672181/14d02591-99c1-4d8e-b8a9-628fab698b0f)
 
